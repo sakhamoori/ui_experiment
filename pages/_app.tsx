@@ -1,8 +1,9 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import withChakraUI from '../src/hocs/with-chakra-ui'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+import { compose } from 'recompose'
 
-export default MyApp
+const App = (): JSX.Element => (
+  <></>
+)
+
+export default compose(withChakraUI)(App)
